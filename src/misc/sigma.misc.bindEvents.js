@@ -35,6 +35,10 @@
           x,
           y,
           s,
+          // node width
+          w,
+          // node height
+          h,
           inserted,
           selected = [],
           modifiedX = mX + self.width / 2,
@@ -54,6 +58,7 @@
           x = n[prefix + 'x'];
           y = n[prefix + 'y'];
           s = n[prefix + 'size'];
+          // console.log(n);
 
           if (
             !n.hidden &&
